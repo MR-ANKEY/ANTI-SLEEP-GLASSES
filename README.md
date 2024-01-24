@@ -63,4 +63,4 @@ digitalWrite(Buz, LOW);
 ```
 
 ## Poster
-<img src="https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/blob/ebec36c201a479b0046848ec6e037f56bc73a7bd/ASG%20POSTER.pdf">
+<img src="https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/blob/bf51432f7d407e439e83a87e2c7255040aefda65/ASG%20POSTER.jpg">
