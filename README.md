@@ -62,5 +62,6 @@ digitalWrite(Buz, LOW);
 }
 ```
 
-## Poster
+
+## POSTER
 <img src="https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/blob/bf51432f7d407e439e83a87e2c7255040aefda65/ASG%20POSTER.jpg">
