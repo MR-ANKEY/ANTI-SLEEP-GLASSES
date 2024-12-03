@@ -6,13 +6,13 @@ Accordingly there is a need for devices that work reliably, and keep the user aw
 ### Step 1 - Components Used
 | Components Name | Product Link |
 --- | --- |
-| Arduino Uno R3 | [X1 Link](https://amzn.eu/d/6wBItzO) |
-| IR Sensor | [X1 Link](https://amzn.eu/d/7M8i4vN) |
-| Transistor BC547 NPN | [X1 link](https://amzn.eu/d/gvKECr3) |
-| 5 Volt Active Buzzer | [X1 link](https://amzn.eu/d/4ODkuQO) |
-| Resistors 4.7K ohm | [X1 link](https://amzn.eu/d/3AlVW8P) |
-| Glasses Frame | [X1 link](https://amzn.eu/d/hrYkqn6) |
-| 5V,9V Battery | [X1 link](https://amzn.eu/d/07cBB3J) |
+| Arduino Uno R3 | Acts as the main control board. | [X1 Link](https://amzn.eu/d/6wBItzO) |
+| IR Sensor | Detects eye closure by measuring reflected IR radiation. | [X1 Link](https://amzn.eu/d/7M8i4vN) |
+| Transistor BC547 NPN | Used to amplify the signal for the buzzer. | [X1 link](https://amzn.eu/d/gvKECr3) |
+| 5 Volt Active Buzzer | Emits sound alerts when drowsiness is detected. | [X1 link](https://amzn.eu/d/4ODkuQO) |
+| Resistors 4.7K ohm | Used in the circuit for proper current flow. | [X1 link](https://amzn.eu/d/3AlVW8P) |
+| Glasses Frame | Houses the electronic components. | [X1 link](https://amzn.eu/d/hrYkqn6) |
+| 5V,9V Battery | Power the entire setup. | [X1 link](https://amzn.eu/d/07cBB3J) |
 
 The amazon product list for entire components in single page are [listed here](https://www.amazon.in/hz/wishlist/ls/QFEMFMPNNZPH?ref_=wl_share).
 
