@@ -1,22 +1,22 @@
 # Project Title - ANTI-SLEEP GLASSES
-Accordingly there is a need for devices that work reliably, and keep the user awake efficiently. So, we have come up with a ANTI-SLEEP GLASSES (ASG). This system alerts the user if he/she falls asleep at the wheel thereby, avoiding accidents and saving lives. This system is useful especially for people who travel long distances and people who are driving late at night.
 
-## Getting Started
+## Introduction
+Developed "ANTI-SLEEP GLASSES," an innovative wearable technology designed to enhance driver safety by preventing drowsiness. The glasses are equipped with an IR sensor that detects the movement of eyelashes. If the eyelashes remain closed for more than 5 seconds, indicating drowsiness, the glasses vibrate to alert the driver, ensuring they remain awake and attentive on the road.
 
-### Step 1 - Components Used
-| Components Name | Product Link |
---- | --- |
-| Arduino Uno R3 | [X1 Link](https://amzn.eu/d/6wBItzO) |
-| IR Sensor | [X1 Link](https://amzn.eu/d/7M8i4vN) |
-| Transistor BC547 NPN | [X1 link](https://amzn.eu/d/gvKECr3) |
-| 5 Volt Active Buzzer | [X1 link](https://amzn.eu/d/4ODkuQO) |
-| Resistors 4.7K ohm | [X1 link](https://amzn.eu/d/3AlVW8P) |
-| Glasses Frame | [X1 link](https://amzn.eu/d/hrYkqn6) |
-| 5V,9V Battery | [X1 link](https://amzn.eu/d/07cBB3J) |
+## Components Used
+| Components Name | Components Details | Product Link |
+--- | --- | --- |
+| Arduino Uno R3 | Acts as the main control board. | [X1 Link](https://amzn.eu/d/6wBItzO) |
+| IR Sensor | Detects eye closure by measuring reflected IR radiation. | [X1 Link](https://amzn.eu/d/7M8i4vN) |
+| Transistor BC547 NPN | Used to amplify the signal for the buzzer. | [X1 link](https://amzn.eu/d/gvKECr3) |
+| 5 Volt Active Buzzer | Emits sound alerts when drowsiness is detected. | [X1 link](https://amzn.eu/d/4ODkuQO) |
+| Resistors 4.7K ohm | Used in the circuit for proper current flow. | [X1 link](https://amzn.eu/d/3AlVW8P) |
+| Glasses Frame | Houses the electronic components. | [X1 link](https://amzn.eu/d/hrYkqn6) |
+| 3.7v Battery | Power the entire setup. | [X1 link](https://amzn.eu/d/07cBB3J) |
 
-The amazon product list for entire components in single page are [listed here](https://www.amazon.in/hz/wishlist/ls/QFEMFMPNNZPH?ref_=wl_share).
+The list for entire components are [listed here](https://www.amazon.in/hz/wishlist/ls/QFEMFMPNNZPH?ref_=wl_share).
 
-### Step 2 - How it Works
+## How it Works
 The working of this project is based on an Infra Red Sensor, This sensor is the heart of this project.
 
 Let's take a look to the IR Sensor. Basically it has a transmitter IR LED, A photo Diode, an Opp-amplifier IC and a potentiometer.
@@ -24,12 +24,27 @@ The photo diode is placed just next to the IR LED in such a way that it can not 
 
 Let's see the main circuit diagram of the project. I connected a IR sensor to the Arduino Uno R3 board as Vcc of the sensor to the vcc of the Arduino Uno, Ground to the ground and the output of the sensor to the Analog pin one (A1) of the Arduino Uno. I used a 5 volt buzzer for alerting. I connected buzzer to general purpose NPN Transistor (BC547) to drive it. Transistor's emitter connected to the ground and collector connected to the negative pin of the buzzer. Positive terminal of buzzer is further connected to the vcc of the Arduino Uno. Base of the transistor connected to the pin D3 of the Arduino Uno through the 4.7 kilo ohm resistor.
 
-### Step 3 - Sensor setting
-It will be better if you do this before sticking the sensor on the frame, After connecting all the components power up it. Now set the the sensors sensitivity distance to minimum. About 10 mm or less..
+## Circuit Setup
+### Connect the IR sensor to Arduino:
+ - Vcc to Arduino's Vcc
+ - Ground to Arduino's Ground
+ - Output to Analog pin A1
 
-### Step 4 - Programming
+### Connect a buzzer using a transistor:
+ - Buzzer's negative pin to transistor collector
+ - Transistor emitter to Ground
+ - Transistor base connected to Arduino pin D3 via a resistor
+
+### Sensor setting:
+ - set the sensitivity distance to minimum 10mm or less
+
+## Circuit Diagram
+
+
+## Programming
 After wiring connect Arduino Uno with computer using USB cable. Copy the following Arduino code and pest it in Arduino ide. Now goto tool menu and select board Arduino Pro mini, Again goto tool menu and select COM port. And Now click on upload Button. after uploading the program all done and its ready to play.
 ```
+// The Arduino code monitors the sensor input and controls the buzzer output. When prolonged eye closure is detected, it triggers an alert.
 int Sinput = A1;    // creating or assigning an int type variable for sensor input signal
 int Buz=3;            // creating or assigning an int type variable for output buzz and vibrator
 
@@ -65,3 +80,14 @@ digitalWrite(Buz, LOW);
 
 ## POSTER
 <img src="https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/blob/bf51432f7d407e439e83a87e2c7255040aefda65/ASG%20POSTER.jpg">
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact Information
+
+If you have any questions or feedback, please feel free to contact us:
+
+- **Email:** [Send mail](mailto:ankitprajapati26032002@gmail.com)
+- **GitHub Issues:** [Create an issue](https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/issues)
