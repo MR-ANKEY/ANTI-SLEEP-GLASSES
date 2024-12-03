@@ -1,5 +1,5 @@
 # Project Title - ANTI-SLEEP GLASSES
-Accordingly there is a need for devices that work reliably, and keep the user awake efficiently. So, we have come up with a ANTI-SLEEP GLASSES (ASG). This system alerts the user if he/she falls asleep at the wheel thereby, avoiding accidents and saving lives. This system is useful especially for people who travel long distances and people who are driving late at night.
+Developed "ANTI-SLEEP GLASSES," an innovative wearable technology designed to enhance driver safety by preventing drowsiness. The glasses are equipped with an IR sensor that detects the movement of eyelashes. If the eyelashes remain closed for more than 5 seconds, indicating drowsiness, the glasses vibrate to alert the driver, ensuring they remain awake and attentive on the road.
 
 ## Getting Started
 
@@ -41,6 +41,7 @@ It will be better if you do this before sticking the sensor on the frame, After 
 ### Step 4 - Programming
 After wiring connect Arduino Uno with computer using USB cable. Copy the following Arduino code and pest it in Arduino ide. Now goto tool menu and select board Arduino Pro mini, Again goto tool menu and select COM port. And Now click on upload Button. after uploading the program all done and its ready to play.
 ```
+// The Arduino code monitors the sensor input and controls the buzzer output. When prolonged eye closure is detected, it triggers an alert.
 int Sinput = A1;    // creating or assigning an int type variable for sensor input signal
 int Buz=3;            // creating or assigning an int type variable for output buzz and vibrator
 
