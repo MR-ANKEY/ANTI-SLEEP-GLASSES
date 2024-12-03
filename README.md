@@ -84,3 +84,10 @@ digitalWrite(Buz, LOW);
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact Information
+
+If you have any questions or feedback, please feel free to contact us:
+
+- **Email:** [Send mail](mailto:ankitprajapati26032002@gmail.com)
+- **GitHub Issues:** [Create an issue](https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/issues)
