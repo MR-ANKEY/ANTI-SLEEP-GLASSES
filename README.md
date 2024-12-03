@@ -14,7 +14,7 @@ Accordingly there is a need for devices that work reliably, and keep the user aw
 | Glasses Frame | Houses the electronic components. | [X1 link](https://amzn.eu/d/hrYkqn6) |
 | 5V,9V Battery | Power the entire setup. | [X1 link](https://amzn.eu/d/07cBB3J) |
 
-The amazon product list for entire components in single page are [listed here](https://www.amazon.in/hz/wishlist/ls/QFEMFMPNNZPH?ref_=wl_share).
+The amazon product list for entire components are [listed here](https://www.amazon.in/hz/wishlist/ls/QFEMFMPNNZPH?ref_=wl_share).
 
 ### Step 2 - How it Works
 The working of this project is based on an Infra Red Sensor, This sensor is the heart of this project.
@@ -23,6 +23,17 @@ Let's take a look to the IR Sensor. Basically it has a transmitter IR LED, A pho
 The photo diode is placed just next to the IR LED in such a way that it can not receive IR rays directly. Photodiode is sensitive to the IR radiation. It's cathode connected to the positive voltage i.e. 5volt and anode connected to the non-inverting input of the Opp-amplifier which also get pulled down though the 10Kilo ohm resistor. Potentiometer in IR sensor is use to set the sensitivity distance of the sensor, it connected to the inverting input of the Opp-amplifier. IR LED continuously transmit the infra red rays and if any object comes in front of it, IR rays get reflected back and it received by the photo diode due to this change in IR radiation the voltage at the anode get change, the change in anode voltage is depend on the IR radiation received by the photo diode. More the IR radiation received grater will be the change in anode voltage. The output of the IR Sensor taken from the output of the Opp-amplifier. We can adjust the sensitivity distance by rotating the potentiometer on the sensor, we rotate the potentiometer that means we set a threshold voltage for the noninverting input of the Opp-amplifier. Whenever the voltage on the noninverting input is greater than the threshold voltage, the voltage on the noninverting input i.e. +ve voltage from the photodiode get forwarded and get the positive pulse at the output of the Opp-amplifier i.e. output of the sensor.
 
 Let's see the main circuit diagram of the project. I connected a IR sensor to the Arduino Uno R3 board as Vcc of the sensor to the vcc of the Arduino Uno, Ground to the ground and the output of the sensor to the Analog pin one (A1) of the Arduino Uno. I used a 5 volt buzzer for alerting. I connected buzzer to general purpose NPN Transistor (BC547) to drive it. Transistor's emitter connected to the ground and collector connected to the negative pin of the buzzer. Positive terminal of buzzer is further connected to the vcc of the Arduino Uno. Base of the transistor connected to the pin D3 of the Arduino Uno through the 4.7 kilo ohm resistor.
+
+### Step 4 - Circuit Setup
+#### Connect the IR sensor to Arduino:
+ - Vcc to Arduino's Vcc
+ - Ground to Arduino's Ground
+ - Output to Analog pin A1
+
+#### Connect a buzzer using a transistor:
+ - Buzzer's negative pin to transistor collector
+ - Transistor emitter to Ground
+ - Transistor base connected to Arduino pin D3 via a resistor
 
 ### Step 3 - Sensor setting
 It will be better if you do this before sticking the sensor on the frame, After connecting all the components power up it. Now set the the sensors sensitivity distance to minimum. About 10 mm or less..
