@@ -1,3 +1,4 @@
+// The Arduino code monitors the sensor input and controls the buzzer output. When prolonged eye closure is detected, it triggers an alert.
 int Sinput = A1;    // creating or assigning an int type variable for sensor input signal
 int Buz=3;            // creating or assigning an int type variable for output buzz and vibrator
 
