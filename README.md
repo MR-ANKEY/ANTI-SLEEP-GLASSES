@@ -4,8 +4,8 @@ Accordingly there is a need for devices that work reliably, and keep the user aw
 ## Getting Started
 
 ### Step 1 - Components Used
-| Components Name | Product Link | Components Details |
---- | --- |
+| Components Name | Components Details | Product Link |
+--- | --- | --- |
 | Arduino Uno R3 | Acts as the main control board. | [X1 Link](https://amzn.eu/d/6wBItzO) |
 | IR Sensor | Detects eye closure by measuring reflected IR radiation. | [X1 Link](https://amzn.eu/d/7M8i4vN) |
 | Transistor BC547 NPN | Used to amplify the signal for the buzzer. | [X1 link](https://amzn.eu/d/gvKECr3) |
