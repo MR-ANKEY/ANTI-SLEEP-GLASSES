@@ -37,7 +37,6 @@ Let's see the main circuit diagram of the project. I connected a IR sensor to th
 
 ### Sensor setting:
  - set the sensitivity distance to minimum 10mm or less
- - 
 
 ## Programming
 After wiring connect Arduino Uno with computer using USB cable. Copy the following Arduino code and pest it in Arduino ide. Now goto tool menu and select board Arduino Pro mini, Again goto tool menu and select COM port. And Now click on upload Button. after uploading the program all done and its ready to play.
