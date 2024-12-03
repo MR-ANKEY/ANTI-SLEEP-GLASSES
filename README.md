@@ -39,7 +39,7 @@ Let's see the main circuit diagram of the project. I connected a IR sensor to th
  - set the sensitivity distance to minimum 10mm or less
 
 ## Circuit Diagram
-
+<img src="image/circuit.png">
 
 ## Programming
 After wiring connect Arduino Uno with computer using USB cable. Copy the following Arduino code and pest it in Arduino ide. Now goto tool menu and select board Arduino Pro mini, Again goto tool menu and select COM port. And Now click on upload Button. after uploading the program all done and its ready to play.
@@ -79,7 +79,7 @@ digitalWrite(Buz, LOW);
 
 
 ## POSTER
-<img src="https://github.com/MR-ANKEY/ANTI-SLEEP-GLASSES/blob/bf51432f7d407e439e83a87e2c7255040aefda65/ASG%20POSTER.jpg">
+<img src="image/ASG POSTER .jpg">
 
 
 ## License
